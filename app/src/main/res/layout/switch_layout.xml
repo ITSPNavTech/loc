@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Switch xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_switch"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:text="저장"
+    android:textColor="@color/white"
+    android:gravity="center"
+    tools:ignore="UseSwitchCompatOrMaterialXml" />

@@ -1,0 +1,31 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">위성 항법 (with KASS) </string>
+
+    <string name="current_average_hint">CCn0. 4 Sats:
+        <xliff:g id="currentAverage">%s</xliff:g></string>
+    <string name="history_average_hint">HCn0. 4 Sats:
+        <xliff:g id="historyAverage">%s</xliff:g></string>
+    <string name="satellite_number_sum_hint">Visible Sats:
+        <xliff:g id="totalNumber">%d</xliff:g></string>
+    <string-array name="plot_titles">
+        <item>CN0(dB.Hz) vs Time(s)</item>
+        <!--        <item>Pseudorange residual(m) vs Time(s)</item>-->
+    </string-array>
+    <string-array name="constellation_arrays">
+        <item>All</item>
+        <item>GPS</item>
+        <item>SBAS</item>
+        <item>GLONASS</item>
+        <item>QZSS</item>
+        <item>BEIDOU</item>
+        <item>GALILEO</item>
+    </string-array>
+    <string-array name="tab_arrays">
+        <item>C/N0</item>
+        <item>PR Residual</item>
+    </string-array>
+    <string name="turn_on_location_measurement">
+        No Measurement has been received yet. Please turn on Measurement and Location in Settings.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
