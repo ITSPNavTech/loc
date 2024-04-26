@@ -1,5 +1,0 @@
-디지털서명 만들기
-keytool -genkeypair -v -keystore intospace-loc-release-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias intospace-loc-alias
-
-SHA-1 키
-keytool -list -v -keystore intospace-loc-release-key.jks -alias intospace-loc-alias
