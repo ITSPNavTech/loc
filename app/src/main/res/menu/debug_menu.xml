@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/debug_menu">
+    <item android:id="@+id/menu_debug_map"
+        android:tag="0"
+        android:title="지도"/>
+    <item android:id="@+id/menu_debug_plot"
+        android:tag="1"
+        android:title="그래프"/>
+    <item android:id="@+id/menu_debug_setting"
+        android:tag="2"
+        android:title="디버그 설정"/>
+    <item android:id="@+id/menu_update"
+        android:tag="3"
+        android:title="업데이트 확인"/>
+    <item
+        android:id="@+id/menu_logging_item"
+        android:title="저장"
+        android:tag="4"
+        app:actionLayout="@layout/switch_layout"
+        app:showAsAction="always"/>
+</menu>

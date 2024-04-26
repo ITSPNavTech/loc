@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:orientation="vertical"
+      android:id="@+id/plot"
+      android:background="@drawable/plot_graph_border"
+      android:layout_weight="3">
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation = "horizontal">
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="start"
+        android:id = "@+id/constellation_spinner"
+        android:entries="@array/constellation_arrays">
+    </Spinner>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="end"
+        android:id = "@+id/tab_spinner"
+        android:entries="@array/tab_arrays">
+    </Spinner>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:orientation = "horizontal"
+      android:layout_weight="1"
+      android:background="@drawable/plot_graph_border">
+
+  <TextView
+      android:id="@+id/analysis_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/turn_on_location_measurement"
+      android:padding="5dp"
+      android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/location_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위치 정보 표시"
+        android:padding="5dp"
+        android:layout_weight="1"/>
+
+  </LinearLayout>
+</LinearLayout>
