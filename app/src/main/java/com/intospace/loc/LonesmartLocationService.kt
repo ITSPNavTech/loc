@@ -167,11 +167,11 @@ class LonesmartLocationService : LonesmartService(), MeasurementListener, Fragme
                     /**
                      * INFO: 위치 계산 이벤트가 ITSP Location API에서 발생할 경우, Location.proivder 는 "LSPI"로 전달됨
                      * Location 의 Extra 값은 다음과 같다.
-                     *      SSRSat : SBAS 보정 정보가 적용된 위성 개수
-                     *      CMode : Correction Mode [SBAS:보정 정보가 있는 위성들만 사용, MIXED: 모든 위성 사용, STANDALONE: 보정 정보가 있는 위성이 없음)
-                     *      PMode : 정지 또는 이동 상태를 나타냄, STATIC: 정지, MOVING: 이동
-                     *      SVNum : 사용 위성 개수
-                     *      PDop  : Position DOP. 기하학적인 위성 배치에 기반한 계산 결과의 모호성
+                     *      SSRSat : Satellites using Correction. 보정 정보가 적용된 위성 개수
+                     *      CMode  : Correction Mode [SBAS:보정 정보를 사용하는 위성이 하나 이상일 때, STANDALONE: 보정 정보를 적용한 위성이 없을 때)
+                     *      PMode  : Positioning Mode. 정지 또는 이동 상태를 나타냄, STATIC: 정지, MOVING: 이동
+                     *      SVNum  : Number of Satellite. 사용 위성 개수
+                     *      PDop   : Position DOP(Dilusion of Precision). 기하학적인 위성 배치에 기반한 계산 결과의 모호성
                      */
                     lspiLocation = location;
                 }
@@ -200,6 +200,10 @@ class LonesmartLocationService : LonesmartService(), MeasurementListener, Fragme
 
     fun stopLogging() {
         locationProvider.stopLogging()
+    }
+
+    fun getLastLocation() : Location? {
+        return locationProvider.getLastLocation()
     }
 
     interface ServiceCallback {
