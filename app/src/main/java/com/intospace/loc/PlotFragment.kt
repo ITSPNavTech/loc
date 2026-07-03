@@ -37,8 +37,8 @@ import android.widget.Spinner
 import android.widget.TextView
 import androidx.collection.ArrayMap
 import androidx.viewpager2.widget.ViewPager2
-import com.intospace.location.lbs.lonesmart.gnss.service.ITSPLocationProvider
-import com.intospace.location.lbs.lonesmart.gnss.service.MeasurementListener
+import com.intospace.location.lbs.lonesmart.gnss.ITSPLocationProvider
+import com.intospace.location.lbs.lonesmart.gnss.MeasurementListener
 import org.achartengine.ChartFactory
 import org.achartengine.GraphicalView
 import org.achartengine.model.XYMultipleSeriesDataset

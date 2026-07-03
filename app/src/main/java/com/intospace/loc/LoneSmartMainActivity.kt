@@ -33,7 +33,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import com.intospace.location.lbs.lonesmart.gnss.service.MeasurementListener
+import com.intospace.location.lbs.lonesmart.gnss.MeasurementListener
 
 
 class LoneSmartMainActivity : AppCompatActivity(), FragmentDataListener, MeasurementListener, LonesmartLocationService.ServiceCallback {

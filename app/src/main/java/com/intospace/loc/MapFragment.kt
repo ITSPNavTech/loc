@@ -43,8 +43,8 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
-import com.intospace.location.lbs.lonesmart.gnss.service.ITSPLocationProvider
-import com.intospace.location.lbs.lonesmart.gnss.service.MeasurementListener
+import com.intospace.location.lbs.lonesmart.gnss.ITSPLocationProvider
+import com.intospace.location.lbs.lonesmart.gnss.MeasurementListener
 import java.text.SimpleDateFormat
 
 /**

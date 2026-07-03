@@ -18,8 +18,8 @@ import android.os.HandlerThread
 import android.os.IBinder
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
-import com.intospace.location.lbs.lonesmart.gnss.service.ITSPLocationProvider
-import com.intospace.location.lbs.lonesmart.gnss.service.MeasurementListener
+import com.intospace.location.lbs.lonesmart.gnss.ITSPLocationProvider
+import com.intospace.location.lbs.lonesmart.gnss.MeasurementListener
 import java.lang.IllegalArgumentException
 
 class LonesmartLocationService : LonesmartService(), MeasurementListener, FragmentDataListener {

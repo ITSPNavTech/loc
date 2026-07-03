@@ -22,6 +22,12 @@ ITSPLoc Library
      implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
      debugImplementation files('libs/itsploc-1.2.0.aar')
 
+   1.3  
+   - 패키지 구조 변경: com.intospace.location.lbs.lonesmart.gnss.service.* → com.intospace.location.lbs.lonesmart.gnss.*  
+   - compileSdk 34 이상 필요  
+   - Dependencies:
+     implementation files('libs/itsploc-1.3-release.aar')
+
 2. 라이브러리 사용 방법
 
    2.1 API Key 발급
@@ -31,7 +37,7 @@ ITSPLoc Library
 
    2.2 라이브러리 추가
 
-       1. 프로젝트의 app/libs 폴더에 itsploc-X.X.X.aar 라이브러리를 추가합니다.
+       1. 프로젝트의 app/libs 폴더에 itsploc-X.X-release.aar 라이브러리를 추가합니다.
 
        2. 어플리케이션의 build.gradle 파일의 dependencies에 아래와 같이 라이브러리를 추가합니다:
           implementation 'com.google.guava:guava:31.1-jre'
@@ -40,7 +46,7 @@ ITSPLoc Library
           implementation 'org.ejml:ejml-simple:0.43.1'
           implementation 'com.google.android.gms:play-services-location:21.1.0'
           implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
-          debugImplementation files('libs/itsploc-1.2.0.aar')
+          implementation files('libs/itsploc-1.3-release.aar')
 
    2.3 Permission 추가
 
