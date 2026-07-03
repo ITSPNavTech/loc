@@ -12,3 +12,6 @@ local.properties
 # local dev/agent artifacts - never publish
 /.omc
 /.claude
+
+# non-obfuscated legacy library - never publish
+app/libs/itsploc-1.2.0.aar
