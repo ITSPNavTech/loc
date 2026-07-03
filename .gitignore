@@ -13,3 +13,10 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# local dev/agent artifacts - never publish
+/.omc
+/.claude
+/.idea/AndroidProjectSystem.xml
+/.idea/markdown.xml
+/.idea/runConfigurations.xml
