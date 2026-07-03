@@ -1,12 +1,7 @@
 *.iml
 .gradle
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea
 .DS_Store
 /build
 /captures
@@ -17,6 +12,3 @@ local.properties
 # local dev/agent artifacts - never publish
 /.omc
 /.claude
-/.idea/AndroidProjectSystem.xml
-/.idea/markdown.xml
-/.idea/runConfigurations.xml
